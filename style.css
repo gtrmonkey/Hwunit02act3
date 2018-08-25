@@ -1,0 +1,166 @@
+body{
+  height: 98vh;
+  background-color: #550101;
+  margin-left:20px;
+  margin-right: 20px;
+}
+
+.container{
+display: grid;
+  width: 100%;
+  grid-template-columns:150px 200px;
+  grid-template-rows:   350px 125px 350px 125px 350px 125px;
+  grid-template-areas:
+    "  happy two  "
+    "  tie tie  "
+    "  sign one  "
+    "  moped moped  "
+    "  light three  "
+    "   flower sax  ";
+  grid-gap: 5px;
+    
+  
+}
+h3{
+  font-family: "Source+Sans+Pro" ;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 2;
+  color: white;
+  margin-top: 20px;
+  
+
+}
+h1{
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 32px;
+  line-height:3;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+p{
+  font-family: "Source+Sans+Pro" ;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 2;
+}
+.happy{
+  grid-area:happy;
+  background-color: red;
+  color: white;
+ 
+
+}
+
+.two{
+  grid-area:two;
+  background-color: turquoise;
+  color: white;
+  
+}
+
+.tie{
+  grid-area: tie;
+  background-image: url("images/tie.png");
+}
+
+.sign{
+  grid-area: sign;
+  background-image: url("images/sign.jpg");
+}
+
+.moped{
+  grid-area:moped;
+  background-image: url("images/moped.jpg");
+  background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: bottom center;
+}
+
+.light{
+  grid-area: light;
+  background-image: url("images/light.jpg");
+  background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position:  center;
+}
+
+.three{
+  grid-area: three;
+  background-color: turquoise;
+  color: white;
+}
+
+.flower{
+  grid-area: flower;
+  background-image: url("images/flower.jpg");
+}
+
+.sax{
+
+  grid-area: sax;
+  background-image:url("images/sax.jpg");
+}
+
+.one{
+  grid-area: one;
+  background-color: turquoise;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .container{
+    display: grid;
+      width: 100%;
+      grid-template-columns:200px 200px 300px 300px 200px;
+      grid-template-rows:  200px 200px 150px 150px 200px;
+      grid-template-areas:
+        "  happy two tie tie sign "
+        "  one two tie tie sign "
+        "  one moped moped light three "
+        "  sax moped moped flower three  ";
+   
+      grid-gap: 5px;
+  }
+
+      .tie{
+        grid-area: tie;
+        background-image: url("images/tie.png");
+        background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position:  center;}
+    .sign{
+      grid-area: sign;
+      background-image: url("images/sign.jpg");
+      background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position:  center;
+    }
+
+    .flower{
+      grid-area: flower;
+      background-image: url("images/flower.jpg");
+      background-size:     cover;                     
+      background-repeat:   no-repeat;
+      background-position:  center;
+    }
+    
+    .sax{
+    
+      grid-area: sax;
+      background-image:url("images/sax.jpg");
+      background-size:     cover;                     
+      background-repeat:   no-repeat;
+      background-position:  center;
+    }
+
+    
+     
+  
+  }
+
+
+
+
